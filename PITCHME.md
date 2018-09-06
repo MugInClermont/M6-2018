@@ -2,54 +2,69 @@
 
 ---
 
-# Présentation Mug / Sujet (Damien - 5min)
+# A Story of containers
+
+Note: 
+Présentation Mug / Sujet (Damien - 5min)
 
 ---
 
-# Déploiement Physique (Damien - 5min)
+## Physical Deployment
+
+Note: 
+Déploiement Physique (Damien - 5min)
 
 ---
 
-# Virtualisation (Jérôme ou Pierre - 5min)
+## Virtualization
+
+Note:  
+Virtualisation (Jérôme ou Pierre - 5min)
 
 +++
 
-## C'est quoi ?
+### Virtualization - What is it ?
 
 +++
 
-## Inconvénients
+### Virtualization - Cons
 
 ---
 
-# Containers (Jérôme ou Pierre - 20min)
+## Containers
+
+Note: 
+Containers (Jérôme ou Pierre - 20min)
 
 +++
 
-## C'est quoi ? Pourquoi ?
+### Containers - What is it ?
 
 +++
 
-## Démo -> DockerFile
-        -> Apache avec files
+### Demo 
+
+Note: 
+    -> DockerFile
+    -> Apache avec files
 
 +++
 
-## Docker Hub / Registry
+### Docker Hub / Registry
 
 ---
 
-# Orchestrator
+## Orchestrator
 
 +++
 
-## Orchestrator - What is it ?
+### Orchestrator - What is it ?
 
 * Cluster Management
 
 +++
 
-## Orchestrator - What is it ?
+### Orchestrator - What is it ?
 
 Core capabilities: 
 * Cluster Management
@@ -61,7 +76,7 @@ C'est tout le coeur de l'orchestration : Distribuer les services/application sur
 
 +++
 
-## Orchestrator - What is it ?
+### Orchestrator - What is it ?
 
 Core capabilities:
 * Cluster Management
@@ -74,7 +89,7 @@ C'est la capacité d'un administrateur à charger un fichier de service sur un s
 
 +++
 
-## Orchestrator - What is it ?
+### Orchestrator - What is it ?
 
 Core capabilities:
 * Cluster Management
@@ -88,7 +103,7 @@ C'est la capacité de maintenir un cluser à jours et des hosts à jours sans in
 
 +++
 
-## Orchestrator - What is it ?
+### Orchestrator - What is it ?
 
 Core capabilities:
 * Cluster Management
@@ -103,7 +118,7 @@ C'est la capacité d'un orchestrateur de faire communiquer des services entre eu
 
 +++
 
-## Orchestrator - What is it ?
+### Orchestrator - What is it ?
 
 Core capabilities:
 * Cluster Management
@@ -122,7 +137,7 @@ Si l'on veut que le ServiceDisovery fonctionne alors que les services sont exéc
 
 +++
 
-## Orchestrator - What is it ?
+### Orchestrator - What is it ?
 
 Core capabilities:
 * Cluster Management
@@ -140,7 +155,7 @@ Multi-region: C'est ce qui permet d'orchestrer des containers dans plusieurs ré
 
 +++
 
-## Orchestrator - What is it ?
+### Orchestrator - What is it ?
 
 Additional capabilities:
 * Application Health Monitoring
@@ -150,7 +165,7 @@ C'est la capacité d'un cluster de monitorer le fonctionnement des hosts et d'en
 
 +++
 
-## Orchestrator - What is it ?
+### Orchestrator - What is it ?
 
 Additional capabilities:
 * Application Health Monitoring
@@ -164,7 +179,7 @@ C'est la capacité d'un cluster d'orchestration de choisir comment une applicati
 
 +++
 
-## Orchestrator - What is it ?
+### Orchestrator - What is it ?
 
 Additional capabilities:
 * Application Health Monitoring
@@ -179,18 +194,18 @@ C'est enfin la capacité de l'orchestrateur de monitorer le fonctionnement de l'
 
 +++
 
-## Orchestrator - The products
+### Orchestrator - The products
 
 +++
 
-## Orchestrator - The products
+### Orchestrator - The products
 
 Commonly used Orchestrators: 
 * Docker Swarm
 
 +++
 
-## Orchestrator - The products
+### Orchestrator - The products
 
 Commonly used Orchestrators: 
 * Docker Swarm
@@ -198,7 +213,7 @@ Commonly used Orchestrators:
 
 +++
 
-## Orchestrator - The products
+### Orchestrator - The products
 
 Commonly used Orchestrators: 
 * Docker Swarm
@@ -207,7 +222,7 @@ Commonly used Orchestrators:
 
 +++
 
-## Orchestrator - The products
+### Orchestrator - The products
 
 Commonly used Orchestrators: 
 * Docker Swarm
@@ -217,7 +232,7 @@ Commonly used Orchestrators:
 
 +++
 
-## Orchestrator - The products
+### Orchestrator - The products
 
 Commonly used Orchestrators: 
 * Docker Swarm
@@ -228,7 +243,7 @@ Commonly used Orchestrators:
 
 +++
 
-## Orchestrator - The products
+### Orchestrator - The products
 
 Commonly used Orchestrators: 
 * Docker Swarm
@@ -240,22 +255,22 @@ Commonly used Orchestrators:
 
 +++
 
-## Démo (5min)
+### Démo (5min)
 
 +++
 
-## And the Cloud ? 
+### And the Cloud ? 
 
 +++
 
-## And the Cloud ? 
+### And the Cloud ? 
 
 * Docker Cloud
     Running with Amazon Web Services (aka: AWS)
 
 +++
 
-## And the Cloud ? 
+### And the Cloud ? 
 
 * Docker Cloud
     Running with Amazon Web Services (aka: AWS)
@@ -263,7 +278,7 @@ Commonly used Orchestrators:
 
 +++
 
-## And the Cloud ? 
+### And the Cloud ? 
 
 * Docker Cloud
     Running with Amazon Web Services (aka: AWS)
@@ -272,4 +287,6 @@ Commonly used Orchestrators:
 
 ---
 
-# Question ? (15 min)
+## Question ?
+
+Note: 15 min
