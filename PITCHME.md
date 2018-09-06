@@ -42,9 +42,41 @@ Containers (Jérôme ou Pierre - 20min)
 +++
 
 ### Containers 
-#### What is it ?
+#### Transport before 1960
+---?image=assets/container-before-1960.jpg
 
-+++
+### Transport now
+---?image=assets/container-now.jpg
+
+#### Containers versus VitualMachine    
+---?image=assets/container-vs-vm.jpg
+
+### Container in IT
+- Versionned artifact
+- isolated deployable unit
+- Container image is bit by bit identical when deployed 
+- abstraction of data center resources 
+- Usage is "Castle business"
+
+### definitions 
+- Container
+A container defines a software application and its dependencies wrapped in a complete filesystem, including code, runtime, system tools and libraries
+- Images
+An image is a read-only snapshot of a docker container
+
+### Where are stored images 
+- Docker Hub
+- Azure container registry
+
+### Advantages of container 
+- Bit by bit images
+- Fast deployment / Fast startuo- - Simple scaling and partitioning
+- Isolated, versioned, reusable code
+
+Clear distinction between development and operaions
+- dev : takes care of the content of the container
+- Ops : takes care of the operations of the container
+
 
 ### Demo 
 
