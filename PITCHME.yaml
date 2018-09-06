@@ -1,7 +1,6 @@
 logo: assets/logo.png
 theme: night
 theme-override : pitch.css
-background: assets/container-3118783_960_720.jpg
 background-size: cover
 charts: true
 published : true
