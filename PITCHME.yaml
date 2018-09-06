@@ -1,5 +1,5 @@
 logo: assets/logo.png
-theme: night
+theme: skyp
 theme-override : pitch.css
 background-size: cover
 charts: true
