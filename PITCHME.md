@@ -1,7 +1,9 @@
 ---?image=assets/container-3118783_960_720.jpg
 
-# A Story 
-## of containers
+<span class="primary">
+    <h1>A Story </h1>   
+    <h2> of containers</h2>
+</span> 
 
 Note: 
 Présentation Mug / Sujet (Damien - 5min)
@@ -61,8 +63,6 @@ Note:
 
 Core capabilities:
 - Cluster Management |
-- - Host discovery |
-- - Host Health Monitoring |
 - Scheduling |
 - Orchestrator Updates and Host Maintenance |
 - Service Discovery |
@@ -130,7 +130,6 @@ Commonly used Orchestrators:
 ### And the Cloud ? 
 
 - Docker Cloud |
-- - Running with Amazon Web Services (aka: AWS) |
 - Amazon Elastic Container Service (aka: Amazon ECS) |
 - Azure Kubernetes Service (aka: AKS) | 
 
