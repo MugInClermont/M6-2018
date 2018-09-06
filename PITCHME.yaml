@@ -1,3 +1,8 @@
-theme-override : assets/PITCHME.css
 logo: assets/logo.png
+theme: sky
+theme-override : pitch.css
+# background: assets/wallpaper-gray.jpg
+# background-size: cover
 footnote : "© Mug In Clermont - 2018"
+charts: true
+published : true
