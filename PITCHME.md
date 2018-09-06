@@ -24,11 +24,13 @@ Virtualisation (Jérôme ou Pierre - 5min)
 
 +++
 
-### Virtualization - What is it ?
+### Virtualization 
+#### What is it ?
 
 +++
 
-### Virtualization - Cons
+### Virtualization 
+#### Cons
 
 ---
 
@@ -39,7 +41,8 @@ Containers (Jérôme ou Pierre - 20min)
 
 +++
 
-### Containers - What is it ?
+### Containers 
+#### What is it ?
 
 +++
 
@@ -59,7 +62,8 @@ Note:
 
 +++
 
-### Orchestrator - What is it ?
+### Orchestrator 
+#### What is it ?
 
 Core capabilities:
 - Cluster Management |
@@ -83,7 +87,8 @@ Multi-region: C'est ce qui permet d'orchestrer des containers dans plusieurs ré
 
 +++
 
-### Orchestrator - What is it ?
+### Orchestrator 
+#### What is it ?
 
 Additional capabilities:
 - Application Health Monitoring |
@@ -103,11 +108,13 @@ C'est enfin la capacité de l'orchestrateur de monitorer le fonctionnement de l'
 
 +++
 
-### Orchestrator - The products
+### Orchestrator 
+#### The products
 
 +++
 
-### Orchestrator - The products
+### Orchestrator
+#### The products
 
 Commonly used Orchestrators: 
 - Docker Swarm | 
