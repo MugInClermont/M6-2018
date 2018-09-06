@@ -23,4 +23,6 @@
     font-size: 3em;
     overflow: visible;
     color: white;
+    left: 0;
+    right: 0;
 }
