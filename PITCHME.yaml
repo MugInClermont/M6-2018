@@ -1,8 +1,8 @@
 logo: assets/logo.png
-theme: sky
+theme: night
 theme-override : pitch.css
-# background: assets/wallpaper-gray.jpg
-# background-size: cover
-footnote : "© Mug In Clermont - 2018"
+background: assets/container-3118783_960_720.jpg
+background-size: cover
 charts: true
 published : true
+footnote : "© Mug In Clermont - 2018"

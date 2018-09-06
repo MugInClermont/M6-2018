@@ -1,7 +1,3 @@
-![Logo](assets/background.png)
-
----
-
 # A Story 
 ## of containers
 
