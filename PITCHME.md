@@ -1,8 +1,8 @@
 ---?image=assets/container-3118783_960_720.jpg
 
 <span class="primary">
-    <h1>A Story </h1>   
-    <h2> of containers</h2>
+    <span>A Story </span>   
+    <span> of containers</span>
 </span> 
 
 Note: 
