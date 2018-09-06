@@ -1,3 +1,7 @@
+![Logo](assets/background.png)
+
+---
+
 # Présentation Mug / Sujet (Damien - 5min)
 
 ---
