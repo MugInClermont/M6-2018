@@ -25,12 +25,12 @@ Virtualisation (Jérôme ou Pierre - 5min)
 +++
 
 ### Virtualization 
-#### What is it ?
+#### What is it?
 
 +++
 
 ### Virtualization 
-#### Cons
+#### Constraints
 
 ---
 
@@ -43,40 +43,67 @@ Containers (Jérôme ou Pierre - 20min)
 
 ### Containers 
 #### Transport before 1960
----?image=assets/container-before-1960.jpg
+
++++?image=assets/container-before-1960.jpg
+
++++
 
 ### Transport now
----?image=assets/container-now.jpg
 
-#### Containers versus VitualMachine    
----?image=assets/container-vs-vm.jpg
++++?image=assets/container-now.jpg
+   
++++
+
+#### Containers versus VitualMachine 
+
++++?image=assets/container-vs-vm.jpg
+
++++ 
 
 ### Container in IT
-- Versionned artifact
-- isolated deployable unit
-- Container image is bit by bit identical when deployed 
-- abstraction of data center resources 
-- Usage is "Castle business"
+
+- Versionned artifact |
+- Isolated deployable unit |
+- Container image is bit by bit identical when deployed | 
+- Abstraction of data center resources |
+- Usage is "Castle business" |
+
++++
 
 ### definitions 
-- Container
-A container defines a software application and its dependencies wrapped in a complete filesystem, including code, runtime, system tools and libraries
-- Images
-An image is a read-only snapshot of a docker container
 
-### Where are stored images 
-- Docker Hub
-- Azure container registry
+- Container |
+- Images |
+
+Note: 
+- A container defines a software application and its dependencies wrapped in a complete filesystem, including code, runtime, system tools and libraries 
+- An image is a read-only snapshot of a docker container 
+
++++
+
+### Where are stored images?
+
+- Docker Hub |
+- Azure container registry |
+- On premise registry |
+
++++
 
 ### Advantages of container 
-- Bit by bit images
-- Fast deployment / Fast startuo- - Simple scaling and partitioning
-- Isolated, versioned, reusable code
 
-Clear distinction between development and operaions
-- dev : takes care of the content of the container
-- Ops : takes care of the operations of the container
+- Bit by bit images |
+- Fast deployment / Fast startup- - Simple scaling and partitioning |
+- Isolated, versioned, reusable code |
 
++++
+
+### Advantages of container 
+#### Clear distinction between development and operations 
+
+- Dev : takes care of the content of the container |
+- Ops : takes care of the operations of the container |
+
++++
 
 ### Demo 
 
@@ -95,7 +122,7 @@ Note:
 +++
 
 ### Orchestrator 
-#### What is it ?
+#### What is it?
 
 Core capabilities:
 - Cluster Management |
@@ -120,9 +147,9 @@ Multi-region: C'est ce qui permet d'orchestrer des containers dans plusieurs ré
 +++
 
 ### Orchestrator 
-#### What is it ?
+#### What is it?
 
-Additional capabilities:
+Additional capabilities
 - Application Health Monitoring |
 - Application Deployments |
 - Application Performance Monitoring |
@@ -148,7 +175,7 @@ C'est enfin la capacité de l'orchestrateur de monitorer le fonctionnement de l'
 ### Orchestrator
 #### The products
 
-Commonly used Orchestrators: 
+Commonly used Orchestrators
 - Docker Swarm | 
 - Kubernetes |
 - Nomad |
@@ -158,22 +185,23 @@ Commonly used Orchestrators:
 
 +++
 
-### Démo (5min)
+### Demo (5min)
 
 +++
 
-### And the Cloud ? 
+### And the Cloud? 
 
 +++
 
-### And the Cloud ? 
+### And the Cloud? 
 
 - Docker Cloud |
-- Amazon Elastic Container Service (aka: Amazon ECS) |
+- Amazon Elastic Kubernetes Service (aka: Amazon EKS) |
+- Alibaba Container Services for Kubernetes (aka: CSK) |
 - Azure Kubernetes Service (aka: AKS) | 
 
 ---
 
-## Question ?
+## Question?
 
 Note: 15 min
