@@ -45,18 +45,27 @@ Containers (Jérôme ou Pierre - 20min)
 #### Transport before 1960
 ---?image=assets/container-before-1960.jpg
 
++++
+
 ### Transport now
 ---?image=assets/container-now.jpg
+
++++
 
 #### Containers versus VitualMachine    
 ---?image=assets/container-vs-vm.jpg
 
++++ 
+
 ### Container in IT
-- Versionned artifact
-- isolated deployable unit
-- Container image is bit by bit identical when deployed 
-- abstraction of data center resources 
-- Usage is "Castle business"
+
+- Versionned artifact |
+- isolated deployable unit |
+- Container image is bit by bit identical when deployed | 
+- abstraction of data center resources |
+- Usage is "Castle business" |
+
++++
 
 ### definitions 
 - Container
