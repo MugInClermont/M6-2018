@@ -68,14 +68,19 @@ Containers (Jérôme ou Pierre - 20min)
 +++
 
 ### definitions 
+
 - Container
 A container defines a software application and its dependencies wrapped in a complete filesystem, including code, runtime, system tools and libraries
 - Images
 An image is a read-only snapshot of a docker container
 
++++
+
 ### Where are stored images 
 - Docker Hub
 - Azure container registry
+
++++
 
 ### Advantages of container 
 - Bit by bit images
@@ -86,6 +91,7 @@ Clear distinction between development and operaions
 - dev : takes care of the content of the container
 - Ops : takes care of the operations of the container
 
++++
 
 ### Demo 
 
