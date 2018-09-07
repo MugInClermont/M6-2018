@@ -93,7 +93,11 @@ An image is a read-only snapshot of a docker container |
 - Fast deployment / Fast startup- - Simple scaling and partitioning |
 - Isolated, versioned, reusable code |
 
-Clear distinction between development and operaions |
++++
+
+### Advantages of container 
+#### Clear distinction between development and operations 
+
 - dev : takes care of the content of the container |
 - Ops : takes care of the operations of the container |
 
