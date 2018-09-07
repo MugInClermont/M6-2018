@@ -63,9 +63,9 @@ Containers (Jérôme ou Pierre - 20min)
 ### Container in IT
 
 - Versionned artifact |
-- isolated deployable unit |
+- Isolated deployable unit |
 - Container image is bit by bit identical when deployed | 
-- abstraction of data center resources |
+- Abstraction of data center resources |
 - Usage is "Castle business" |
 
 +++
@@ -73,9 +73,11 @@ Containers (Jérôme ou Pierre - 20min)
 ### definitions 
 
 - Container |
-A container defines a software application and its dependencies wrapped in a complete filesystem, including code, runtime, system tools and libraries |
 - Images |
-An image is a read-only snapshot of a docker container |
+
+Note: 
+- A container defines a software application and its dependencies wrapped in a complete filesystem, including code, runtime, system tools and libraries 
+- An image is a read-only snapshot of a docker container 
 
 +++
 
@@ -98,7 +100,7 @@ An image is a read-only snapshot of a docker container |
 ### Advantages of container 
 #### Clear distinction between development and operations 
 
-- dev : takes care of the content of the container |
+- Dev : takes care of the content of the container |
 - Ops : takes care of the operations of the container |
 
 +++
