@@ -39,15 +39,15 @@ Virtualisation (Jérôme ou Pierre - 5min)
 Note: 
 Containers (Jérôme ou Pierre - 20min)
 
-+++image=assets/container-before-1960.jpg
++++?image=assets/container-before-1960.jpg
 
 ### Containers 
 #### Transport before 1960
 
-+++image=assets/container-now.jpg
++++?image=assets/container-now.jpg
 ### Transport now
    
-+++image=assets/container-vs-vm.jpg
++++?image=assets/container-vs-vm.jpg
 #### Containers versus VitualMachine 
 
 +++ 
