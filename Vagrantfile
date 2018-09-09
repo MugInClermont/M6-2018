@@ -4,7 +4,6 @@ Vagrant.configure("2") do |config|
     config.hostmanager.enabled = true
    
     host_number = 3
-    network_name = "rancher_lab"
    
     config.vm.provider "virtualbox" do |v|
       v.cpus = 2
@@ -20,14 +19,14 @@ Vagrant.configure("2") do |config|
        end
     end
    
-    config.vm.define "master" do |machine|
-        machine.vm.hostname = "master"
-        machine.vm.network "private_network", ip: "172.17.177.90", virtualbox__intnet: network_name
+    config.vm.define "master" do |master|
+        master.vm.hostname = "master"
+        master.vm.network "private_network", ip: "172.17.177.90"
 
         # Enable provisioning with a shell script. Additional provisioners such as
         # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
         # documentation for more information about their specific syntax and use.
-        config.vm.provision "shell", inline: <<-SHELL
+        master.vm.provision "shell", inline: <<-SHELL
             yum update -y
             yum clean all
             rm -rf /var/cache/yum
@@ -38,14 +37,14 @@ Vagrant.configure("2") do |config|
 
     # Nodes
     (1..host_number).each do |i|
-        config.vm.define "node#{i}" do |machine|
-            machine.vm.hostname = "node#{i}"
-            machine.vm.network "private_network", ip: "172.17.177.9#{i}", virtualbox__intnet: network_name
+        config.vm.define "node#{i}" do |node|
+            node.vm.hostname = "node#{i}"
+            node.vm.network "private_network", ip: "172.17.177.9#{i}"
             
             # Enable provisioning with a shell script. Additional provisioners such as
             # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
             # documentation for more information about their specific syntax and use.
-            config.vm.provision "shell", inline: <<-SHELL
+            node.vm.provision "shell", inline: <<-SHELL
                 yum update -y
                 yum clean all
                 rm -rf /var/cache/yum
