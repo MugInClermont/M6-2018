@@ -4,6 +4,7 @@ Vagrant.configure("2") do |config|
     config.hostmanager.enabled = true
    
     host_number = 3
+    network_ip = "10.172.0"
    
     config.vm.provider "virtualbox" do |v|
       v.cpus = 2
@@ -15,13 +16,13 @@ Vagrant.configure("2") do |config|
       if ENV.has_key?('HTTP_PROXY') and ENV.has_key?('HTTPS_PROXY')
            config.proxy.http     = "#{ENV['HTTP_PROXY']}"
            config.proxy.https    = "#{ENV['HTTPS_PROXY']}"
-           config.proxy.no_proxy = "localhost, 172.17.177.*"
+           config.proxy.no_proxy = "localhost, #{network_ip}.*"
        end
     end
    
     config.vm.define "master" do |master|
         master.vm.hostname = "master"
-        master.vm.network "private_network", ip: "172.17.177.90"
+        master.vm.network "private_network", ip: "#{network_ip}.90"
 
         # Enable provisioning with a shell script. Additional provisioners such as
         # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
@@ -39,7 +40,7 @@ Vagrant.configure("2") do |config|
     (1..host_number).each do |i|
         config.vm.define "node#{i}" do |node|
             node.vm.hostname = "node#{i}"
-            node.vm.network "private_network", ip: "172.17.177.9#{i}"
+            node.vm.network "private_network", ip: "#{network_ip}.9#{i}"
             
             # Enable provisioning with a shell script. Additional provisioners such as
             # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
