@@ -32,7 +32,7 @@ Virtualisation (Jérôme ou Pierre - 5min)
 +++
 
 ### Virtualization 
-#### What is itpouet?
+#### What is it?
 
 +++
 
