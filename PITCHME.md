@@ -7,10 +7,10 @@
 
 ---
 
-## Why a MUG ?
+## Why a MUG?
 
-- A cool team of experts
-- Some nice conferences
+- A cool team of experts |
+- Some nice conferences |
 - A good time together
 
 Note: 
