@@ -7,13 +7,10 @@
 
 ---
 
-# Why a MUG?
-
-?image=assets/logo.jpg
-
-- A cool team of experts |
-- Some nice conferences |
-- A good time together
+## Why a MUG?
+###A cool team of experts |
+###Some nice conferences |
+###A good time together
 
 Note: 
 Présentation Mug / Sujet (Damien - 5min)
@@ -35,7 +32,7 @@ Virtualisation (Jérôme ou Pierre - 5min)
 +++
 
 ### Virtualization 
-#### What is it?
+#### What is itpouet?
 
 +++
 
