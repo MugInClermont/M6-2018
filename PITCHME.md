@@ -5,6 +5,8 @@
     <span> of containers</span>
 </span> 
 
+## Why a MUG ?
+
 Note: 
 Présentation Mug / Sujet (Damien - 5min)
 
