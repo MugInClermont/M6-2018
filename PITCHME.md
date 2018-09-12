@@ -7,7 +7,9 @@
 
 ---
 
-## Why a MUG?
+# Why a MUG?
+
+?image=assets/logo.jpg
 
 - A cool team of experts |
 - Some nice conferences |
