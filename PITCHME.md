@@ -8,9 +8,10 @@
 ---
 
 ## Why a MUG?
-### A cool team of experts
-### Nice conferences and nice subjects
-### A good time together
+
+* A cool team of experts |
+* Nice conferences and nice subjects |
+* A good time together |
 
 Note: 
 Présentation Mug / Sujet (Damien - 5min)
