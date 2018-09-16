@@ -195,7 +195,8 @@ Commonly used Orchestrators
 
 ### Orchestrator
 #### The demo ?
-But before starting
+
+But before starting |
 
 +++
 
@@ -208,8 +209,10 @@ But before starting
 
 +++
 
-### Demo (10min)
+### Rancher Demo 
 (And now let's playing...)
+
+Note: 10min
 
 +++
 
