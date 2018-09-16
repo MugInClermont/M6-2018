@@ -1,0 +1,14 @@
+default_password: admin
+version: stable
+cluster: 
+  name: "lab"
+master:
+  cpus: 1
+  memory: 1500
+node:
+  count: 3
+  cpus: 1
+  memory: 1500
+ip:
+  master: 172.22.101.100
+  node:   172.22.101.111

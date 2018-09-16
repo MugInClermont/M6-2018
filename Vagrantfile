@@ -1,56 +1,62 @@
-# coding: utf-8
+require 'ipaddr'
+require 'yaml'
+
+vagrant_config = YAML.load_file('config.yml')
+puts "Config: #{vagrant_config.inspect}\n\n"
+
 Vagrant.configure("2") do |config|
-    config.vm.box = "minimum/centos-7-docker"
+    master_config = vagrant_config.fetch('master')
+    master_ip = vagrant_config.fetch('ip').fetch('master')
+    
+    config.vm.box = "kbeaugrand/debian-docker"
+    config.vm.box_version = "0.2"
+
     config.hostmanager.enabled = true
-   
-    host_number = 3
-    network_ip = "10.172.0"
-   
-    config.vm.provider "virtualbox" do |v|
-      v.cpus = 2
-      v.memory = 2048
-    end
-   
-    # Configuration du proxy sur les VMs vagrant
-    if Vagrant.has_plugin?("vagrant-proxyconf")
-      if ENV.has_key?('HTTP_PROXY') and ENV.has_key?('HTTPS_PROXY')
-           config.proxy.http     = "#{ENV['HTTP_PROXY']}"
-           config.proxy.https    = "#{ENV['HTTPS_PROXY']}"
-           config.proxy.no_proxy = "localhost, #{network_ip}.*"
-       end
-    end
    
     config.vm.define "master" do |master|
         master.vm.hostname = "master"
-        master.vm.network "private_network", ip: "#{network_ip}.90"
+        master.vm.network "private_network", ip: master_ip
+
+        master.vm.provider "virtualbox" do |v, override|
+            v.cpus = master_config.fetch('cpus')
+            v.memory = master_config.fetch('memory')
+            v.name = "master"
+        end
 
         # Enable provisioning with a shell script. Additional provisioners such as
         # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
         # documentation for more information about their specific syntax and use.
-        master.vm.provision "shell", inline: <<-SHELL
-            yum update -y
-            yum clean all
-            rm -rf /var/cache/yum
-             
-            docker run -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher
-            SHELL
+        master.vm.provision "shell", path: 'scripts/configure_rancher_server.sh', args: [   master_ip, 
+                                                                                            vagrant_config.fetch('default_password'), 
+                                                                                            vagrant_config.fetch('version'),
+                                                                                            vagrant_config.fetch('cluster').fetch('name') ]
     end
 
     # Nodes
-    (1..host_number).each do |i|
-        config.vm.define "node#{i}" do |node|
-            node.vm.hostname = "node#{i}"
-            node.vm.network "private_network", ip: "#{network_ip}.9#{i}"
+    node_config = vagrant_config.fetch('node')
+    (1..node_config.fetch('count')).each do |i|
+        node_ip = IPAddr.new(vagrant_config.fetch('ip').fetch('node'))
+    
+        node_name = "node#{i}"
+
+        config.vm.define node_name do |node|
+
+            node.vm.hostname = node_name
+            node.vm.network "private_network", ip: IPAddr.new(node_ip.to_i + node_config.fetch('count') - 1, Socket::AF_INET).to_s
+
+            node.vm.provider "virtualbox" do |v|
+                v.cpus = node_config.fetch('cpus')
+                v.memory = node_config.fetch('memory')
+                v.name = node_name
+            end
             
             # Enable provisioning with a shell script. Additional provisioners such as
             # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
             # documentation for more information about their specific syntax and use.
-            node.vm.provision "shell", inline: <<-SHELL
-                yum update -y
-                yum clean all
-                rm -rf /var/cache/yum
-             
-                SHELL
+            node.vm.provision "shell", path: 'scripts/configure_rancher_node.sh', args: [
+                                                                                        master_ip, 
+                                                                                        vagrant_config.fetch('default_password'),
+                                                                                        vagrant_config.fetch('cluster').fetch('name') ]
         end
     end
 end
