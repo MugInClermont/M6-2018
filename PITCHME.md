@@ -185,15 +185,31 @@ C'est enfin la capacité de l'orchestrateur de monitorer le fonctionnement de l'
 
 Commonly used Orchestrators
 - Docker Swarm | 
-- Kubernetes |
 - Nomad |
 - Empire |
 - Mesosphere |
+- Kubernetes |
 - Rancher |
 
 +++
 
-### Demo (5min)
+### Orchestrator
+#### The demo ?
+But before starting
+
++++
+
+### Kubernetes
+#### The concepts
+
+* Node |
+* Pod |
+* Ingress |
+
++++
+
+### Demo (10min)
+(And now let's playing...)
 
 +++
 
