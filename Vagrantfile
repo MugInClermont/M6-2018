@@ -37,12 +37,12 @@ Vagrant.configure("2") do |config|
     (1..node_config.fetch('count')).each do |i|
         node_ip = IPAddr.new(vagrant_config.fetch('ip').fetch('node'))
     
-        node_name = "node#{i}"
+        node_name = "node-%02d" % i
 
         config.vm.define node_name do |node|
 
             node.vm.hostname = node_name
-            node.vm.network "private_network", ip: IPAddr.new(node_ip.to_i + node_config.fetch('count') - 1, Socket::AF_INET).to_s
+            node.vm.network "private_network", ip: IPAddr.new(node_ip.to_i + i - 1, Socket::AF_INET).to_s
 
             node.vm.provider "virtualbox" do |v|
                 v.cpus = node_config.fetch('cpus')

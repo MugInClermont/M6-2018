@@ -41,7 +41,6 @@ CLUSTERID=`echo $CLUSTERRESPONSE | jq -r .data[].id`
 if [ `hostname` == "node-01" ]; then
   ROLEFLAGS="--etcd --controlplane --worker"
 else
-  #ROLEFLAGS="--worker"
   ROLEFLAGS="--worker"
 fi
 
