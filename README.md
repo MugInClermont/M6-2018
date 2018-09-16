@@ -1,7 +1,10 @@
-# M6-2018
+# The Pitch
 
 [![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/mug-in-clermont-public/M6-2018/develop?grs=gitlab&t=sky)
 
+## The movie
+
+(This will come a few days after the 19th, September 2018)
 
 # How to start my cluster ? 
 
