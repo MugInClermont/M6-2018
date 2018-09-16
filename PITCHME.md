@@ -218,10 +218,6 @@ Note: 10min
 
 ### And the Cloud? 
 
-+++
-
-### And the Cloud? 
-
 - Docker Cloud |
 - Amazon Elastic Kubernetes Service (aka: Amazon EKS) |
 - Alibaba Container Services for Kubernetes (aka: CSK) |
