@@ -133,12 +133,12 @@ Note:
 #### What is it?
 
 Core capabilities:
-- Cluster Management |
-- Scheduling |
-- Orchestrator Updates and Host Maintenance |
-- Service Discovery |
-- Networking and Load Balancing |
-- Multi-tenant, Multi-region |
+* Cluster Management |
+* Scheduling |
+* Orchestrator Updates and Host Maintenance |
+* Service Discovery |
+* Networking and Load Balancing |
+* Multi-tenant, Multi-region |
 
 Note: 
 C'est tout le coeur de l'orchestration : Distribuer les services/application sur plusieurs hosts pour améliorer la performance, la disponibilité et la reprise d'activité
@@ -158,9 +158,9 @@ Multi-region: C'est ce qui permet d'orchestrer des containers dans plusieurs ré
 #### What is it?
 
 Additional capabilities
-- Application Health Monitoring |
-- Application Deployments |
-- Application Performance Monitoring |
+* Application Health Monitoring |
+* Application Deployments |
+* Application Performance Monitoring |
 
 Note: 
 C'est la capacité d'un cluster de monitorer le fonctionnement des hosts et d'en déduire des actions à effectuer sur le cluster.
@@ -184,19 +184,17 @@ C'est enfin la capacité de l'orchestrateur de monitorer le fonctionnement de l'
 #### The products
 
 Commonly used Orchestrators
-- Docker Swarm | 
-- Nomad |
-- Empire |
-- Mesosphere |
-- Kubernetes |
-- Rancher |
+* Docker Swarm | 
+* Nomad |
+* Empire |
+* Mesosphere |
+* Kubernetes |
+* Rancher |
 
 +++
 
 ### Orchestrator
 #### The demo ?
-
-But before starting |
 
 +++
 
