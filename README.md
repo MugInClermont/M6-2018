@@ -61,6 +61,11 @@ If you didn't change anything, browse this website with admin/admin identifiers.
 
 [https://172.22.101.100](https://172.22.101.100)
 
+### Your cluster will be ready when you will see
+
+![Cluster is ready!!](assets/cluster-ready.png "Cluster is ready!!")
+
+
 ## Destroy the cluster
 
 ```
