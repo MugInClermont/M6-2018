@@ -34,10 +34,15 @@ Vulgariser,
 
 +++
 
-### 
+### Actions
+* IUT Clermont Ferrand Workshop
+* RIP Presentation
+* ...
+
 ---
 
 ## Physical Deployment
+
 
 Note: 
 Déploiement Physique (Damien - 5min)
