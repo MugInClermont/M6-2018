@@ -43,9 +43,21 @@ Vulgariser,
 
 ## Physical Deployment
 
-
 Note: 
-Déploiement Physique (Damien - 5min)
+Présentation Sujet 
+Plusieurs manières de déployer à l'ancienne
+
++++
+
+### Manual deployment
+
++++?image=assets/deployment.png
+
++++
+
+### Remote deployment
+
++++?image=assets/container-before-1960.jpg
 
 ---
 
