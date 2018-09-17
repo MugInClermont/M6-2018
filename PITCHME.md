@@ -57,7 +57,7 @@ Plusieurs manières de déployer à l'ancienne
 
 ### Remote deployment
 
-+++?image=assets/container-before-1960.jpg
++++?image=assets/deployment2.png
 
 ---
 
