@@ -14,8 +14,27 @@
 * A good time together |
 
 Note: 
-Présentation Mug / Sujet (Damien - 5min)
+Un constat :
+Des technos vieillissantes utilisées chez notre client,
+Une volonté de faire mieux, mais peu de moyens / temps,
+Peu de connaissances des nouveautés, améliorations possibles,
+Des actions :
+Faire mieux,
+Diffuser / partager,
+Vulgariser,
 
++++
+
+### Conferences
+* Xamarin (June 2017)
+* .Net Core (October 2017)
+* Ai'nnov - Microservices(December 2017)
+* Continuous Integration (January 2018)
+* ...
+
++++
+
+### 
 ---
 
 ## Physical Deployment
