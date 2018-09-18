@@ -307,7 +307,8 @@ C'est enfin la capacité de l'orchestrateur de monitorer le fonctionnement de l'
 #### The products
 
 Commonly used Orchestrators
-* Docker Swarm | 
+
+* Docker Swarm |
 * Nomad |
 * Empire |
 * Mesosphere |
@@ -330,7 +331,8 @@ Commonly used Orchestrators
 
 +++
 
-### Rancher Demo 
+### Rancher Demo
+
 (And now let's playing...)
 
 Note: 10min
@@ -350,4 +352,6 @@ Note: 10min
 
 Note: 15 min
 
----?image=assets/ Thumbnail_horizontal_QRC_1537289038135.png
+---
+
+<img src="assets/Unitag_QRCode_1537289038135.png" class="qr_code">
