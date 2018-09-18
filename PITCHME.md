@@ -26,31 +26,78 @@ Déploiement Physique (Damien - 5min)
 ---
 
 ## Virtualization
-
-Note:  
-Virtualisation (Jérôme ou Pierre - 5min)
-
 +++
 
 ### Virtualization 
 #### What is it?
 
+@quote[In computing, virtualization refers to the act of creating a virtual version of something, including virtual computer hardware platforms, storage devices, and computer network resources.](wikipedia)
+
 +++
 
 ### Virtualization 
-#### Constraints
+#### Type-2 or hosted hypervisors
+- VMware Workstation 
+- Oracle VirtualBox
+- Microsoft Windows Virtual PC
 
----
-
-## Containers
-
-Note: 
-Containers (Jérôme ou Pierre - 20min)
+note: run on a conventional operating system.A guest operating system runs as a process on the host. Type-2 hypervisors abstract guest operating systems from the host operating system.
 
 +++
 
-### Containers 
-#### Transport before 1960
+### Virtualization 
+#### Type-1 / native or bare-metal hypervisors
+- VMware ESXi
+- Microsoft Hyper-V
+- Proxmox
+
+note: run directly on the host's hardware to control the hardware and to manage guest operating systems. sometimes called bare metal hypervisors. The first hypervisors
+
++++
+
+### Virtualization 
+#### Cool features
+- P2V |
+- Shared resource |
+- Snapshot |
+- Migration |
+- Failover |
+
+Note: 
+A snapshot is a state of a virtual machine, and generally its storage devices, at an exact point in time.
+The snapshots described above can be moved to another host machine with its own hypervisor
+Failover :Similar to the migration mechanism, failover allows the VM to continue operations if the host fails. However, in this case, the VM continues operation from the last-known coherent state, rather than the current state, based on whatever materials the backup server was last provided with.
+Export, dupplication, backup, 
+Greater IT efficiencies. Reduced operating costs.
+
++++
+
+### Virtualization 
+#### Pro
+- can reduce IT costs |
+- automates routine tasks |
+- makes a business energy-efficient |
+- promotes greater redundancy |
+- greatly helps with development |
+- allows for faster deployment |
+
++++
+
+### Virtualization 
+#### Cons
+- It requires high upfront expenditures |
+- comes with limitations |
+- comes with the danger of server sprawl |
+
+note: Depense elevée au départ / tout n'est pas possible Hardware/Software
+
+---
+
+## Containerization
+
++++
+ 
+### Transport before 1960
 
 +++?image=assets/container-before-1960.jpg
 
@@ -62,13 +109,51 @@ Containers (Jérôme ou Pierre - 20min)
    
 +++
 
-#### Containers versus VitualMachine 
+### Containerization 
+#### What is it?
 
-+++?image=assets/container-vs-vm.jpg
+@quote[Refers to an operating system feature in which the kernel allows the existence of multiple isolated user-space instances, named container. Programs running inside a container can only see the container's contents and devices assigned to the container.](wikipedia)
+
++++
+
+### Containerization
+#### Containers versus VitualMachine 
+<br/>
+![](assets/container-vs-vm.jpg)
 
 +++ 
 
-### Container in IT
+### Containerization
+#### Available solution(s)
+<br/>
+<br/>
+![](assets/docker.png)
+Note:
+is an open source project 
+ Docker can run across both Windows-
++++
+
+### Containerization
+#### Definitions 
+
+- Container / Registry |
+- Images |
+
+<br/>
+![](assets/Dockerarchitecture.jpg) 
+
+Note: 
+- A container defines a software application and its dependencies wrapped in a complete filesystem, including code, runtime, system tools and libraries 
+- An image is a read-only snapshot of a docker container 
+- Registry is the system that allows to store container
+Docker Hub |
+Azure container registry |
+On premise registry |
+
++++
+
+### Containerization
+#### Container in IT
 
 - Versionned artifact |
 - Isolated deployable unit |
@@ -77,23 +162,6 @@ Containers (Jérôme ou Pierre - 20min)
 - Usage is "Castle business" |
 
 +++
-
-### definitions 
-
-- Container |
-- Images |
-
-Note: 
-- A container defines a software application and its dependencies wrapped in a complete filesystem, including code, runtime, system tools and libraries 
-- An image is a read-only snapshot of a docker container 
-
-+++
-
-### Where are stored images?
-
-- Docker Hub |
-- Azure container registry |
-- On premise registry |
 
 +++
 
@@ -105,7 +173,7 @@ Note:
 
 +++
 
-### Advantages of container 
+### Containerization
 #### Clear distinction between development and operations 
 
 - Dev : takes care of the content of the container |
