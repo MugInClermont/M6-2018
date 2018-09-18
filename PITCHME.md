@@ -357,4 +357,4 @@ Note: 10min
 
 Note: 15 min
 
----?image=assets/Thumbnail_horizontal_QRC_1537289038135.png
+---?image=assets/Unitag_QRCode_1537289038135.png
