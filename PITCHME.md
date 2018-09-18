@@ -116,9 +116,10 @@ note: Depense elevée au départ / tout n'est pas possible Hardware/Software
 
 +++
 
+### Containerization
 #### Containers versus VitualMachine 
 
-![](image=assets/container-vs-vm.jpg)
+![](assets/container-vs-vm.jpg)
 
 +++ 
 
@@ -130,7 +131,25 @@ note: Depense elevée au départ / tout n'est pas possible Hardware/Software
 
 +++
 
-### Container in IT
+### Containerization
+### definitions 
+
+- Container |
+- Images |
+- Registry |
+
+Note: 
+- A container defines a software application and its dependencies wrapped in a complete filesystem, including code, runtime, system tools and libraries 
+- An image is a read-only snapshot of a docker container 
+- Registry is the system that allows to store container
+Docker Hub |
+Azure container registry |
+On premise registry |
+
++++
+
+### Containerization
+#### Container in IT
 
 - Versionned artifact |
 - Isolated deployable unit |
@@ -139,23 +158,6 @@ note: Depense elevée au départ / tout n'est pas possible Hardware/Software
 - Usage is "Castle business" |
 
 +++
-
-### definitions 
-
-- Container |
-- Images |
-
-Note: 
-- A container defines a software application and its dependencies wrapped in a complete filesystem, including code, runtime, system tools and libraries 
-- An image is a read-only snapshot of a docker container 
-
-+++
-
-### Where are stored images?
-
-- Docker Hub |
-- Azure container registry |
-- On premise registry |
 
 +++
 
@@ -167,7 +169,7 @@ Note:
 
 +++
 
-### Advantages of container 
+### Containerization
 #### Clear distinction between development and operations 
 
 - Dev : takes care of the content of the container |
