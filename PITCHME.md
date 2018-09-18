@@ -136,11 +136,11 @@ is an open source project
 ### Containerization
 #### Definitions 
 
-- Container |
+- Container / Registry |
 - Images |
-- Registry |
+
 <br/>
-![](assets/Dockerarchitecture.jpg)|
+![](assets/Dockerarchitecture.jpg) 
 
 Note: 
 - A container defines a software application and its dependencies wrapped in a complete filesystem, including code, runtime, system tools and libraries 
