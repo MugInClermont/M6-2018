@@ -31,6 +31,7 @@ Déploiement Physique (Damien - 5min)
 ### Virtualization 
 #### What is it?
 Wikepedia says :
+
 ````
 In computing, virtualization refers to the act of creating a virtual (rather than actual) version of something, including virtual computer hardware platforms, storage devices, and computer network resources.
 note: Desktop virtualization
