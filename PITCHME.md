@@ -118,7 +118,8 @@ note: Depense elevée au départ / tout n'est pas possible Hardware/Software
 
 ## Containerization
 ### Available solution(s)
-+++?image=assets/docker.png
+?image=assets/docker.png
++++
 
 #### Containers versus VitualMachine 
 
