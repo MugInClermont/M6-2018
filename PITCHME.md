@@ -118,7 +118,7 @@ note: Depense elevée au départ / tout n'est pas possible Hardware/Software
 
 #### Containers versus VitualMachine 
 
-+++?image=assets/container-vs-vm.jpg
+![](image=assets/container-vs-vm.jpg)
 
 +++ 
 
