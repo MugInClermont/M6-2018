@@ -30,7 +30,6 @@ Déploiement Physique (Damien - 5min)
 
 ### Virtualization 
 #### What is it?
-Wikepedia says :
 
 > In computing, virtualization refers to the act of creating a virtual version of something, including virtual computer hardware platforms, storage devices, and computer network resources.
 
@@ -94,14 +93,11 @@ note: Depense elevée au départ / tout n'est pas possible Hardware/Software
 
 ---
 
-## Containers
-
-Note: 
-Containers (Jérôme ou Pierre - 20min)
+## Containerization
 
 +++
  
-#### Transport before 1960
+### Transport before 1960
 
 +++?image=assets/container-before-1960.jpg
 
@@ -112,6 +108,17 @@ Containers (Jérôme ou Pierre - 20min)
 +++?image=assets/container-now.jpg
    
 +++
+
+### Containerization 
+#### What is it?
+
+> Refers to an operating system feature in which the kernel allows the existence of multiple isolated user-space instances, named container. Programs running inside a container can only see the container's contents and devices assigned to the container.
+
++++
+
+## Containerization
+### Available solution(s)
++++?image=assets/docker.png
 
 #### Containers versus VitualMachine 
 
