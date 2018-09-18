@@ -32,7 +32,9 @@ Déploiement Physique (Damien - 5min)
 #### What is it?
 > 	In computing, virtualization refers to the act of creating a virtual (rather than actual) version of something, including virtual computer hardware platforms, storage devices, and computer network resources.
 note: Desktop virtualization
+
 ---
+
 ### Virtualization 
 #### Type-2 or hosted hypervisors
 - VMware Workstation 
@@ -40,7 +42,9 @@ note: Desktop virtualization
 - Microsoft Windows Virtual PC
 
 note: run on a conventional operating system.A guest operating system runs as a process on the host. Type-2 hypervisors abstract guest operating systems from the host operating system.
+
 ---
+
 ### Virtualization 
 #### Type-1 / native or bare-metal hypervisors
 - VMware ESXi
@@ -67,18 +71,18 @@ Greater IT efficiencies. Reduced operating costs.
 ---
 ### Virtualization 
 #### Pro
-. can reduce IT costs |
-. automates routine tasks |
-. makes a business energy-efficient |
-. promotes greater redundancy |
-. greatly helps with development |
-. allows for faster deployment
+- can reduce IT costs |
+- automates routine tasks |
+- makes a business energy-efficient |
+- promotes greater redundancy |
+- greatly helps with development |
+- allows for faster deployment
 ---
 ### Virtualization 
 #### Cons
-. It requires high upfront expenditures. 
-. comes with limitations.
-. comes with the danger of server sprawl. 
+- It requires high upfront expenditures. 
+- comes with limitations.
+- comes with the danger of server sprawl. 
 
 note: Depense elevée au départ / tout n'est pas possible Hardware/Software
 ---
