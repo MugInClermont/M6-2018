@@ -1,11 +1,11 @@
 ## Deploy a new app
 
-First workload to deploy: 
+First workload to deploy:
     rancher/hello-world
 
 ## Upgrade an app
 
-Change the workload:    
+Change the workload:
     nginxdemos/hello
 
 ## Upgrade Fail && Rollback
