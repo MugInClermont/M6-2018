@@ -86,9 +86,9 @@ Greater IT efficiencies. Reduced operating costs.
 
 ### Virtualization 
 #### Cons
-- It requires high upfront expenditures. 
-- comes with limitations.
-- comes with the danger of server sprawl. 
+- It requires high upfront expenditures |
+- comes with limitations |
+- comes with the danger of server sprawl |
 
 note: Depense elevée au départ / tout n'est pas possible Hardware/Software
 
