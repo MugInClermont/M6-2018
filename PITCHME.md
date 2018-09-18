@@ -100,8 +100,7 @@ Note:
 Containers (Jérôme ou Pierre - 20min)
 
 +++
-
-### Containers 
+ 
 #### Transport before 1960
 
 +++?image=assets/container-before-1960.jpg
