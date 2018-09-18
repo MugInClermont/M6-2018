@@ -136,14 +136,19 @@ is an open source project
 ### Containerization
 #### Definitions 
 
-- Container / Registry |
-- Images |
+- Container / Image |
+- Registry |
 
 <br/>
 ![](assets/Dockerarchitecture.jpg) 
 
 Note: 
-- A container defines a software application and its dependencies wrapped in a complete filesystem, including code, runtime, system tools and libraries 
+- A container :
+Versionned artifact |
+Isolated deployable unit |
+Container image is bit by bit identical when deployed | 
+Abstraction of data center resources |
+Usage is "Castle business" (vs Pet business)
 - An image is a read-only snapshot of a docker container 
 - Registry is the system that allows to store container
 Docker Hub |
@@ -152,23 +157,12 @@ On premise registry |
 
 +++
 
-### Containerization
-#### Container in IT
-
-- Versionned artifact |
-- Isolated deployable unit |
-- Container image is bit by bit identical when deployed | 
-- Abstraction of data center resources |
-- Usage is "Castle business" |
-
-+++
-
-+++
-
 ### Advantages of container 
 
 - Bit by bit images |
-- Fast deployment / Fast startup- - Simple scaling and partitioning |
+- Fast deployment / Fast startup |
+- Simple scaling and partitioning |
+- Effective use of the Hardware
 - Isolated, versioned, reusable code |
 
 +++
@@ -181,15 +175,47 @@ On premise registry |
 
 +++
 
-### Demo 
+### Demo 1 
+#### From an image to a container
 
-Note: 
-    -> DockerFile
-    -> Apache avec files
+[Docker toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/)
 
 +++
 
-### Docker Hub / Registry
+### Demo 2
+#### Using a docker file
+Docker files allow to create custom  images, step by step.
+
+### Sample dockerFile
+````
+# Image de base
+FROM debian:jessie
+
+# Install Curl
+RUN apt-get update \
+&& apt-get install -y curl \
+&& rm -rf /var/lib/apt/lists/*
+
+# Install Node.js
+RUN curl -LO "https://nodejs.org/dist/v0.12.5/node-v0.12.5-linux-x64.tar.gz" \
+&& tar -xzf node-v0.12.5-linux-x64.tar.gz -C /usr/local --strip-components=1 \
+&& rm node-v0.12.5-linux-x64.tar.gz
+
+# Changement du repertoire courant
+WORKDIR /app
+
+# Install dependencies
+RUN npm install
+
+# run server
+CMD node server.js
+
+# expose port
+EXPOSE 3000
+````
+
+
++++
 
 ---
 
