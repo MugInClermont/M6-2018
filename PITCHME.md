@@ -26,20 +26,56 @@ Déploiement Physique (Damien - 5min)
 ---
 
 ## Virtualization
-
-Note:  
-Virtualisation (Jérôme ou Pierre - 5min)
-
 +++
 
 ### Virtualization 
 #### What is it?
+> 	In computing, virtualization refers to the act of creating a virtual (rather than actual) version of something, including virtual computer hardware platforms, storage devices, and computer network resources.
+note: Desktop virtualization
+---
+#### Type-2 or hosted hypervisors
+- VMware Workstation 
+- Oracle VirtualBox
+- Microsoft Windows Virtual PC
 
-+++
+note: run on a conventional operating system.A guest operating system runs as a process on the host. Type-2 hypervisors abstract guest operating systems from the host operating system.
+---
+#### Type-1 / native or bare-metal hypervisors
+- VMware ESXi
+- Microsoft Hyper-V
+- Proxmox
 
-### Virtualization 
-#### Constraints
+note: run directly on the host's hardware to control the hardware and to manage guest operating systems. sometimes called bare metal hypervisors. The first hypervisors
+---
+#### Cool features
+- P2V |
+- Shared resource |
+- Snapshot |
+- Migration |
+- Failover
 
+Note: 
+A snapshot is a state of a virtual machine, and generally its storage devices, at an exact point in time.
+The snapshots described above can be moved to another host machine with its own hypervisor
+Failover :Similar to the migration mechanism, failover allows the VM to continue operations if the host fails. However, in this case, the VM continues operation from the last-known coherent state, rather than the current state, based on whatever materials the backup server was last provided with.
+Export, dupplication, backup, 
+Greater IT efficiencies. Reduced operating costs.
+
+---
+#### Pro
+. can reduce IT costs |
+. automates routine tasks |
+. makes a business energy-efficient |
+. promotes greater redundancy |
+. greatly helps with development |
+. allows for faster deployment
+
+#### Cons
+. It requires high upfront expenditures. 
+. comes with limitations.
+. comes with the danger of server sprawl. 
+
+note: Depense elevée au départ / tout n'est pas possible Hardware/Software
 ---
 
 ## Containers
