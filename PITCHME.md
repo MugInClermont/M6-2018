@@ -128,15 +128,19 @@ note: Depense elevée au départ / tout n'est pas possible Hardware/Software
 <br/>
 <br/>
 ![](assets/docker.png)
-
+Note:
+is an open source project 
+ Docker can run across both Windows-
 +++
 
 ### Containerization
-### definitions 
+#### Definitions 
 
 - Container |
 - Images |
 - Registry |
+<br/>
+![](assets/Dockerarchitecture.jpg)|
 
 Note: 
 - A container defines a software application and its dependencies wrapped in a complete filesystem, including code, runtime, system tools and libraries 
