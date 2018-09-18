@@ -198,7 +198,7 @@ On premise registry |
 - Bit by bit images |
 - Fast deployment / Fast startup |
 - Simple scaling and partitioning |
-- Effective use of the Hardware
+- Effective use of the Hardware |
 - Isolated, versioned, reusable code |
 
 +++
@@ -222,36 +222,29 @@ On premise registry |
 #### Using a docker file
 Docker files allow to create custom  images, step by step.
 
++++
+
 ### Sample dockerFile
 ````
 # Image de base
 FROM debian:jessie
-
 # Install Curl
 RUN apt-get update \
 && apt-get install -y curl \
 && rm -rf /var/lib/apt/lists/*
-
 # Install Node.js
 RUN curl -LO "https://nodejs.org/dist/v0.12.5/node-v0.12.5-linux-x64.tar.gz" \
 && tar -xzf node-v0.12.5-linux-x64.tar.gz -C /usr/local --strip-components=1 \
 && rm node-v0.12.5-linux-x64.tar.gz
-
 # Changement du repertoire courant
 WORKDIR /app
-
 # Install dependencies
 RUN npm install
-
 # run server
 CMD node server.js
-
 # expose port
 EXPOSE 3000
 ````
-
-
-+++
 
 ---
 
