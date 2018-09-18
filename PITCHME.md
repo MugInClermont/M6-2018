@@ -320,3 +320,5 @@ Note: 10min
 ## Question?
 
 Note: 15 min
+
+---?image=assets/ Thumbnail_horizontal_QRC_1537289038135.png
