@@ -4,7 +4,7 @@
 
 ## The movie
 
-(This will come a few days after the 19th, September 2018)
+[![Alt text for your video](https://img.youtube.com/vi/4U6XK6NvJ30/0.jpg)](http://www.youtube.com/watch?v=4U6XK6NvJ30)
 
 ## How to start my cluster
 
